@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.home {
+    color: white;
+    background-color: 	#004B93;
+    height: 100vh;
+}
+
+.container {
+    margin: 0 7rem;
+}
+
+/*  start header */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    /* background-color: red; */
+}
+
+.logo img {
+    width: 70px;
+}
+
+.links {
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+ 
+
+}
+
+.links li a {
+    text-decoration: none ;
+    margin-left: 20px;
+    color: white;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.links li a:hover , 
+.links .hom {
+    color: red;
+    text-decoration: underline;
+}
+
+/* end header */
+
+/* start main section  */
+
+.home .content {
+    height: 70%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-content span {
+    font-size: 3em;
+    color: red;
+}
+
+.info-content p {
+    line-height: 25px;
+    width: 60%;
+    /* background-color: red; */
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    padding: 13px 30px;
+    letter-spacing: 1px;
+    transition: all 0.6s ease;
+    border-radius:50px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    -ms-border-radius:50px;
+    -o-border-radius:50px;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+}
+
+.btn:hover {
+    background-color:red;
+    color:white;
+}
+
+.img2 {
+    width: 300px;
+    animation: animation2 0.5s ease-out;
+    -webkit-animation: animation2 0.5s ease-out;
+}
+
+@keyframes animation2 {
+    0% {
+        transform: translatex(500px);
+        -webkit-transform: translatex(500px);
+        -moz-transform: translatex(500px);
+        -ms-transform: translatex(500px);
+        -o-transform: translatex(500px);
+}
+    100% {
+        transform: translatex(0);
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -ms-transform: translatex(0);
+        -o-transform: translatex(0);
+}
+}
+
+
+
+.social-icons {
+    font-size: 2rem;
+    margin-left: 30px;
+    animation: animation1 1s ease;
+    -webkit-animation: animation1 1s ease;
+}
+
+
+.social-icons a i {
+    color: white;
+    margin-top: 10px ;
+    transition: 0.6s ease;
+    -webkit-transition: 0.6s ease;
+    -moz-transition: 0.6s ease;
+    -ms-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+}
+
+.social-icons a i:hover {
+    color: red;
+}
+
+@keyframes animation1 {
+    0% {
+        transform: translatex(500px);
+        -webkit-transform: translatex(500px);
+        -moz-transform: translatex(500px);
+        -ms-transform: translatex(500px);
+        -o-transform: translatex(500px);
+}
+    100% {
+        transform: translatex(0);
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -ms-transform: translatex(0);
+        -o-transform: translatex(0);
+}
+}
+
+.types-pep {
+    width: 100px;
+    display: block;
+    margin:auto;
+    animation: animation3 0.5s ease;
+    -webkit-animation: animation3 0.5s ease;
+}
+
+@keyframes animation3 {
+    0% {
+        transform: translatey(500px);
+        -webkit-transform: translatey(500px);
+        -moz-transform: translatey(500px);
+        -ms-transform: translatey(500px);
+        -o-transform: translatey(500px);
+}
+    100% {
+        transform: translatey(0);
+        -webkit-transform:0;
+        -moz-transform:0;
+        -ms-transform:0;
+        -o-transform:0;
+}
+}
+/* End main section  */
+/* media quaries */
+/* 
+@media only screen and (max-width: 991px) {
+} */
+
+/* Media Tablits  */
+
+@media (max-width:900px) {
+    /* body {
+        display: none;
+        All Elements In The Body Deleted
+    }  */
+    .logo {
+        margin-left:-90px ;
+    }
+    container {
+        margin: 0 1rem;
+    }
+
+    .content {
+        margin-top: -3em;
+    }
+    .links li a {
+        margin-left: 10px;
+    }
+
+    .home .content {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0 0 ;
+    }
+
+    .info-content p {
+        width: 100%;
+    }
+
+    .contenet .info-content {
+        margin-bottom: 2rem;
+    } 
+
+    .img2 {
+        width: 100px;
+        margin: 20px 0 ;
+    }
+
+    .social-icons {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width:600px) {
+    nav {
+        display: block;
+    }
+
+   nav .logo {
+        display: block;
+        margin: 0 auto 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .links li a {
+        font-size: 15px;
+        font-weight: 800px;
+    }
+}
